@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript-todolist</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="centercalcy">
+        <form name="calcy" class="cal">
+            <input type="text" value="calculator" id="start">
+
+            <input type="text" name="answer" id="displayanswer">
+
+            <div class="layer2">
+                <input type="button" class="operator" value="C" id="clearbutton" onclick="calcy.answer.value =+ '' ">
+                <input type="button" class="operator" value="=" onclick="calcy.answer.value= eval(calcy.answer.value) ">
+            </div>
+
+
+
+            <div class="layer1">
+                <input type="button" class="mainnum" value="7" onclick="calcy.answer.value += '7' ">
+                <input type="button" class="mainnum" value="8" onclick="calcy.answer.value += '8' ">
+                <input type="button" class="mainnum" value="9" onclick="calcy.answer.value += '9' ">
+                <input type="button" name="" class="operator" value="*" onclick="calcy.answer.value += '*' ">
+            </div>
+
+            <div class="layer1">
+                <input type="button" class="mainnum" value="4" onclick="calcy.answer.value += '4' ">
+                <input type="button" class="mainnum" value="5" onclick="calcy.answer.value += '5' ">
+                <input type="button" class="mainnum" value="6" onclick="calcy.answer.value += '6' ">
+                <input type="button" name="" class="operator" value="-" onclick="calcy.answer.value += '-' ">
+            </div>
+
+            <div class="layer1">
+                <input type="button" class="mainnum" value="1" onclick="calcy.answer.value += '1' ">
+                <input type="button" class="mainnum" value="2" onclick="calcy.answer.value += '2' ">
+                <input type="button" class="mainnum" value="3" onclick="calcy.answer.value += '3' ">
+                <input type="button" name="" class="operator" value="+" onclick="calcy.answer.value += '+' ">
+            </div>
+
+            <div class="layer1">
+                <input type="button" class="operator" value="." onclick="calcy.answer.value += '.' ">
+                <input type="button" class="mainnum" value="0" onclick="calcy.answer.value += '0' ">
+                <input type="button" class="operator" value="%" onclick="calcy.answer.value += '%' ">
+                <input type="button" name="" class="operator" value="/" onclick="calcy.answer.value += '/' ">
+            </div>
+
+
+        </form>
+    </div>
+    
+    
+</body>
+</html>
